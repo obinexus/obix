@@ -1,0 +1,191 @@
+{
+  "compilerOptions": {
+    /* Core Configuration */
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    
+    /* Path Mapping - Namespace Strategy */
+    "baseUrl": ".",
+    "paths": {
+      /* Primary Namespace Mappings */
+      "@obix/*": ["src/*"],
+      "@obix/core/*": ["src/core/*"],
+      "@obix/cli/*": ["src/cli/*"],
+      
+      /* Core Module Mappings */
+      "@core/*": ["src/core/*"],
+      "@core/automaton/*": ["src/core/automaton/*"],
+      "@core/dop/*": ["src/core/dop/*"],
+      "@core/parser/*": ["src/core/parser/*"],
+      "@core/validation/*": ["src/core/validation/*"],
+      "@core/ast/*": ["src/core/ast/*"],
+      "@core/common/*": ["src/core/common/*"],
+      "@core/ioc/*": ["src/core/ioc/*"],
+      "@core/policy/*": ["src/core/policy/*"],
+      "@core/vhtml/*": ["src/core/vhtml/*"],
+      "@core/vcss/*": ["src/core/vcss/*"],
+      "@core/vdom/*": ["src/core/vdom/*"],
+      
+      /* CLI Module Mappings */
+      "@cli/*": ["src/cli/*"],
+      "@cli/analyzer/*": ["src/cli/analyzer/*"],
+      "@cli/compiler/*": ["src/cli/compiler/*"],
+      "@cli/bundler/*": ["src/cli/bundler/*"],
+      "@cli/minifier/*": ["src/cli/minifier/*"],
+      "@cli/profiler/*": ["src/cli/profiler/*"],
+      "@cli/policy/*": ["src/cli/policy/*"],
+      
+      /* API Layer Mappings */
+      "@api/*": ["src/core/api/*"],
+      "@api/functional/*": ["src/core/api/functional/*"],
+      "@api/hooks/*": ["src/core/api/hooks/*"],
+      "@api/oop/*": ["src/core/api/shared/oop/*"],
+      "@api/shared/*": ["src/core/api/shared/*"],
+      "@api/utils/*": ["src/core/api/utils/*"],
+      
+      /* Specialized Module Mappings */
+      "@parser/*": ["src/core/parser/*"],
+      "@parser/html/*": ["src/core/parser/html/*"],
+      "@parser/css/*": ["src/core/parser/css/*"],
+      "@diff/*": ["src/core/diff/*"],
+      "@factory/*": ["src/core/factory/*"],
+      "@tools/*": ["src/tools/*"],
+      "@config/*": ["src/core/config/*"],
+      "@qa/*": ["src/qa/*"],
+
+      
+      /* Test Mappings */
+      "@test/*": ["tests/*"],
+      "@test/fixtures/*": ["tests/fixtures/*"],
+      "@test/unit/*": ["tests/unit/*"],
+      "@test/integration/*": ["tests/integration/*"]
+    },
+    
+    /* Library Support */
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["jest", "node"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    
+    /* Strict Enforcement */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"
+  ],
+  
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests/**/*.ts",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
+}
+,{
+  "compilerOptions": {
+    /* Core Configuration */
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    
+    /* Path Mapping - Namespace Strategy */
+    "baseUrl": ".",
+    "paths": {
+      /* Primary Namespace Mappings */
+      "@obix/*": ["src/*"],
+      "@obix/core/*": ["src/core/*"],
+      "@obix/cli/*": ["src/cli/*"],
+      
+      /* Core Module Mappings */
+      "@core/*": ["src/core/*"],
+      "@core/automaton/*": ["src/core/automaton/*"],
+      "@core/dop/*": ["src/core/dop/*"],
+      "@core/parser/*": ["src/core/parser/*"],
+      "@core/validation/*": ["src/core/validation/*"],
+      "@core/ast/*": ["src/core/ast/*"],
+      "@core/common/*": ["src/core/common/*"],
+      "@core/ioc/*": ["src/core/ioc/*"],
+      "@core/policy/*": ["src/core/policy/*"],
+      "@core/vhtml/*": ["src/core/vhtml/*"],
+      "@core/vcss/*": ["src/core/vcss/*"],
+      "@core/vdom/*": ["src/core/vdom/*"],
+      
+      /* CLI Module Mappings */
+      "@cli/*": ["src/cli/*"],
+      "@cli/analyzer/*": ["src/cli/analyzer/*"],
+      "@cli/compiler/*": ["src/cli/compiler/*"],
+      "@cli/bundler/*": ["src/cli/bundler/*"],
+      "@cli/minifier/*": ["src/cli/minifier/*"],
+      "@cli/profiler/*": ["src/cli/profiler/*"],
+      "@cli/policy/*": ["src/cli/policy/*"],
+      
+      /* API Layer Mappings */
+      "@api/*": ["src/core/api/*"],
+      "@api/functional/*": ["src/core/api/functional/*"],
+      "@api/hooks/*": ["src/core/api/hooks/*"],
+      "@api/oop/*": ["src/core/api/shared/oop/*"],
+      "@api/shared/*": ["src/core/api/shared/*"],
+      "@api/utils/*": ["src/core/api/utils/*"],
+      
+      /* Specialized Module Mappings */
+      "@parser/*": ["src/core/parser/*"],
+      "@parser/html/*": ["src/core/parser/html/*"],
+      "@parser/css/*": ["src/core/parser/css/*"],
+      "@diff/*": ["src/core/diff/*"],
+      "@factory/*": ["src/core/factory/*"],
+      "@tools/*": ["src/tools/*"],
+      "@config/*": ["src/core/config/*"],
+      "@qa/*": ["src/qa/*"],
+      
+      /* Test Mappings */
+      "@test/*": ["tests/*"],
+      "@test/fixtures/*": ["tests/fixtures/*"],
+      "@test/unit/*": ["tests/unit/*"],
+      "@test/integration/*": ["tests/integration/*"]
+    },
+    
+    /* Library Support */
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["jest", "node"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    
+    /* Strict Enforcement */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"
+  ],
+  
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests/**/*.ts",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
+}

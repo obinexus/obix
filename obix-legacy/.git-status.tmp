@@ -1,0 +1,28 @@
+ D jest.config.cjs
+ D obibuf-poc
+ M package.json
+ M scripts/analyze-modules.sh
+ M scripts/enhanced-import-validator.sh
+ M scripts/import_compliance_resolver.sh
+ M scripts/qa-resolution-deployment.sh
+ M scripts/qa_common_helpers.sh
+ M scripts/qa_master_runner.sh
+ M scripts/run-full-tests.sh
+ M scripts/sh/activate.sh
+ M scripts/sh/dev-setup.sh
+ M scripts/sh/env-setup.sh
+ M scripts/sh/setup-contianer.sh
+ M scripts/sinphase-validator.ts
+ M scripts/tools/architectural-refactoring.sh
+ M scripts/tools/cli-architectural-refactor.sh
+ M scripts/tools/obix-namespace-validator.sh
+ M scripts/tools/pacakge-json-validator.sh
+ M scripts/tools/package-json-validator.sh
+ M scripts/tools/policy-aware-shell-framework.sh
+ M scripts/tools/validate-namespace-tree.sh
+ M scripts/validate-cli-core-integration.sh
+ M scripts/validate-cli-provider.sh
+?? .git-status.tmp
+?? env_fix.sh
+?? inprogress/
+?? obix_git_reconciliation.sh

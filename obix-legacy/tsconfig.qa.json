@@ -1,0 +1,168 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": false,
+    "sourceMap": true,
+    "outDir": "./dist/qa",
+    
+    /* QA-Specific Path Mapping for Import Validation */
+    "baseUrl": ".",
+    "paths": {
+      /* Primary QA Namespace Mappings */
+      "@qa/*": ["tests/qa/*"],
+      "@qa/modules/*": ["tests/qa/modules/*"],
+      "@qa/behavioral/*": ["tests/qa/behavioral/*"],
+      "@qa/react-compatibility/*": ["tests/qa/react-compatibility/*"],
+      "@qa/performance/*": ["tests/qa/performance/*"],
+      "@qa/golden-master/*": ["tests/qa/golden-master/*"],
+      "@qa/fixtures/*": ["tests/fixtures/qa/*"],
+      "@qa/utils/*": ["tests/qa/utils/*"],
+      "@qa/helpers/*": ["scripts/qa/helpers/*"],
+      
+      /* CLI Module QA Mappings */
+      "@qa/cli/*": ["tests/qa/modules/cli-*/*"],
+      "@qa/cli/analyzer/*": ["tests/qa/modules/cli-analyzer/*"],
+      "@qa/cli/bundler/*": ["tests/qa/modules/cli-bundler/*"],
+      "@qa/cli/cache/*": ["tests/qa/modules/cli-cache/*"],
+      "@qa/cli/compiler/*": ["tests/qa/modules/cli-compiler/*"],
+      "@qa/cli/minifier/*": ["tests/qa/modules/cli-minifier/*"],
+      "@qa/cli/profiler/*": ["tests/qa/modules/cli-profiler/*"],
+      "@qa/cli/policy/*": ["tests/qa/modules/cli-policy/*"],
+      "@qa/cli/commands/*": ["tests/qa/modules/cli-commands/*"],
+      "@qa/cli/feature-registry/*": ["tests/qa/modules/cli-feature-registry/*"],
+      
+      /* Core Module QA Mappings */
+      "@qa/core/*": ["tests/qa/modules/core-*/*"],
+      "@qa/core/dop/*": ["tests/qa/modules/core-dop/*"],
+      "@qa/core/automaton/*": ["tests/qa/modules/core-automaton/*"],
+      "@qa/core/parser/*": ["tests/qa/modules/core-parser/*"],
+      "@qa/core/validation/*": ["tests/qa/modules/core-validation/*"],
+      "@qa/core/policy/*": ["tests/qa/modules/core-policy/*"],
+      "@qa/core/state/*": ["tests/qa/modules/core-state/*"],
+      "@qa/core/ast/*": ["tests/qa/modules/core-ast/*"],
+      "@qa/core/ioc/*": ["tests/qa/modules/core-ioc/*"],
+      
+      /* Behavioral QA Mappings */
+      "@qa/behavioral/cli/*": ["tests/qa/behavioral/cli-*/*"],
+      "@qa/behavioral/core/*": ["tests/qa/behavioral/core-*/*"],
+      "@qa/behavioral/react/*": ["tests/qa/behavioral/react-compatibility/*"],
+      
+      /* Source Code Mappings for QA Validation */
+      "@cli/*": ["src/cli/*"],
+      "@cli/analyzer/*": ["src/cli/analyzer/*"],
+      "@cli/bundler/*": ["src/cli/bundler/*"],
+      "@cli/cache/*": ["src/cli/cache/*"],
+      "@cli/compiler/*": ["src/cli/compiler/*"],
+      "@cli/minifier/*": ["src/cli/minifier/*"],
+      "@cli/profiler/*": ["src/cli/profiler/*"],
+      "@cli/policy/*": ["src/cli/policy/*"],
+      "@cli/command/*": ["src/cli/command/*"],
+      "@cli/test-module/*": ["src/cli/test-module/*"],
+      
+      "@core/*": ["src/core/*"],
+      "@core/api/*": ["src/core/api/*"],
+      "@core/automaton/*": ["src/core/automaton/*"],
+      "@core/dop/*": ["src/core/dop/*"],
+      "@core/parser/*": ["src/core/parser/*"],
+      "@core/validation/*": ["src/core/validation/*"],
+      "@core/ioc/*": ["src/core/ioc/*"],
+      "@core/policy/*": ["src/core/policy/*"],
+      "@core/ast/*": ["src/core/ast/*"],
+      "@core/vhtml/*": ["src/core/vhtml/*"],
+      "@core/vcss/*": ["src/core/vcss/*"],
+      "@core/vdom/*": ["src/core/vdom/*"],
+      "@core/common/*": ["src/core/common/*"],
+      "@core/config/*": ["src/core/config/*"],
+      "@core/components/*": ["src/core/components/*"],
+      "@core/factory/*": ["src/core/factory/*"],
+      
+      /* Legacy Mappings for Import Compliance Validation */
+      "@parser/*": ["src/core/parser/*"],
+      "@diff/*": ["src/core/diff/*"],
+      "@api/*": ["src/core/api/*"],
+      "@factory/*": ["src/core/factory/*"],
+      
+      /* Shared Test Utilities */
+      "@test/*": ["tests/*"],
+      "@test/fixtures/*": ["tests/fixtures/*"],
+      "@test/utils/*": ["tests/utils/*"],
+      "@test/shared/*": ["tests/fixtures/shared/*"],
+      "@test/std/*": ["tests/std/*"],
+      "@test/integration/*": ["tests/std/integration/*"],
+      "@test/unit/*": ["tests/std/unit/*"]
+    },
+    
+    /* QA Module Resolution Options */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    
+    /* QA-Specific Library Support */
+    "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    "types": ["jest", "node"],
+    
+    /* QA Validation Settings */
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    
+    /* Enhanced Type Checking for QA */
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true,
+    
+    /* Import Validation Settings */
+    "allowUmdGlobalAccess": false,
+    "checkJs": false,
+    "allowJs": false
+  },
+  
+  "include": [
+    "tests/qa/**/*.ts",
+    "tests/qa/**/*.tsx",
+    "tests/qa/**/*.js",
+    "scripts/qa/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests/std/**/*",
+    "**/*.d.ts"
+  ],
+  
+  /* QA Test Environment Configuration */
+  "ts-node": {
+    "esm": false,
+    "experimentalSpecifierResolution": "node",
+    "compiler": "typescript",
+    "compilerOptions": {
+      "module": "CommonJS",
+      "target": "ES2018"
+    }
+  },
+  
+  /* QA References for Validation */
+  "references": [
+    {
+      "path": "./tsconfig.cli.json"
+    },
+    {
+      "path": "./tsconfig.core.json"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist/cli",
+    "rootDir": "./src/cli",
+    
+    /* CLI-Specific Path Mapping Strategy */
+    "baseUrl": ".",
+    "paths": {
+      /* Primary CLI Namespace Mappings */
+      "@cli/*": ["src/cli/*"],
+      "@cli/analyzer/*": ["src/cli/analyzer/*"],
+      "@cli/bundler/*": ["src/cli/bundler/*"],
+      "@cli/cache/*": ["src/cli/cache/*"],
+      "@cli/compiler/*": ["src/cli/compiler/*"],
+      "@cli/minifier/*": ["src/cli/minifier/*"],
+      "@cli/profiler/*": ["src/cli/profiler/*"],
+      "@cli/policy/*": ["src/cli/policy/*"],
+      "@cli/test-module/*": ["src/cli/test-module/*"],
+      "@cli/command/*": ["src/cli/command/*"],
+      
+      /* CLI Command Registry Mappings - Fixed Single Asterisk Compliance */
+      "@cli/analyzer/commands/*": ["src/cli/analyzer/commands/*"],
+      "@cli/bundler/commands/*": ["src/cli/bundler/commands/*"],
+      "@cli/cache/commands/*": ["src/cli/cache/commands/*"],
+      "@cli/compiler/commands/*": ["src/cli/compiler/commands/*"],
+      "@cli/minifier/commands/*": ["src/cli/minifier/commands/*"],
+      "@cli/profiler/commands/*": ["src/cli/profiler/commands/*"],
+      "@cli/policy/commands/*": ["src/cli/policy/commands/*"],
+      
+      /* Core Dependencies for CLI (Read-Only) */
+      "@core/*": ["src/core/*"],
+      "@core/ioc/*": ["src/core/ioc/*"],
+      "@core/ioc/containers/*": ["src/core/ioc/containers/*"],
+      "@core/ioc/providers/*": ["src/core/ioc/providers/*"],
+      "@core/ioc/registry/*": ["src/core/ioc/registry/*"],
+      "@core/automaton/*": ["src/core/automaton/*"],
+      "@core/dop/*": ["src/core/dop/*"],
+      "@core/validation/*": ["src/core/validation/*"],
+      "@core/policy/*": ["src/core/policy/*"],
+      "@core/common/*": ["src/core/common/*"],
+      
+      /* Utility and Shared Mappings */
+      "@shared/*": ["src/shared/*"],
+      "@utils/*": ["src/cli/utils/*"],
+      "@interfaces/*": ["src/cli/interfaces/*"],
+      "@types/*": ["src/cli/types/*"],
+      
+      /* Test-Specific Mappings for QA - Fixed Single Asterisk Compliance */
+      "@test/cli/analyzer/*": ["tests/qa/modules/cli-analyzer/*"],
+      "@test/cli/bundler/*": ["tests/qa/modules/cli-bundler/*"],
+      "@test/cli/cache/*": ["tests/qa/modules/cli-cache/*"],
+      "@test/cli/compiler/*": ["tests/qa/modules/cli-compiler/*"],
+      "@test/cli/minifier/*": ["tests/qa/modules/cli-minifier/*"],
+      "@test/cli/profiler/*": ["tests/qa/modules/cli-profiler/*"],
+      "@test/fixtures/*": ["tests/fixtures/cli/*"],
+      "@test/utils/*": ["tests/utils/cli/*"]
+    },
+    
+    /* CLI Module Resolution Options */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    
+    /* CLI-Specific Library Support */
+    "lib": ["ES2018", "DOM"],
+    "types": ["node", "jest"],
+    
+    /* CLI Build Optimization */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true
+  },
+  
+  "include": [
+    "src/cli/**/*.ts",
+    "src/cli/**/*.tsx",
+    "src/shared/**/*.ts"
+  ],
+  
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/core/**/*",
+    "tests/**/*.ts",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ],
+  
+  /* CLI-Specific Compilation Settings */
+  "ts-node": {
+    "esm": false,
+    "experimentalSpecifierResolution": "node"
+  },
+  
+  /* CLI Reference Dependencies */
+  "references": [
+    {
+      "path": "./tsconfig.core.json"
+    }
+  ]
+}

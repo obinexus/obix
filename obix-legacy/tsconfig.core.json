@@ -1,0 +1,155 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist/core",
+    "rootDir": "./src/core",
+    
+    /* Core-Specific Path Mapping Strategy */
+    "baseUrl": ".",
+    "paths": {
+      /* Primary Core Namespace Mappings */
+      "@core/*": ["src/core/*"],
+      "@core/api/*": ["src/core/api/*"],
+      "@core/api/functional/*": ["src/core/api/functional/*"],
+      "@core/api/hooks/*": ["src/core/api/hooks/*"],
+      "@core/api/shared/*": ["src/core/api/shared/*"],
+      "@core/api/oop/*": ["src/core/api/shared/oop/*"],
+      "@core/api/utils/*": ["src/core/api/utils/*"],
+      
+      /* Core Module Mappings */
+      "@core/automaton/*": ["src/core/automaton/*"],
+      "@core/automaton/state/*": ["src/core/automaton/state/*"],
+      "@core/automaton/transition/*": ["src/core/automaton/transition/*"],
+      "@core/automaton/minimizer/*": ["src/core/automaton/minimizer/*"],
+      "@core/automaton/equivalence/*": ["src/core/automaton/equivalence/*"],
+      
+      /* DOP (Data-Oriented Programming) Mappings */
+      "@core/dop/*": ["src/core/dop/*"],
+      "@core/dop/adapter/*": ["src/core/dop/adapter/*"],
+      "@core/dop/behavior/*": ["src/core/dop/behavior/*"],
+      "@core/dop/data/*": ["src/core/dop/data/*"],
+      "@core/dop/factory/*": ["src/core/dop/factory/*"],
+      "@core/dop/common/*": ["src/core/dop/common/*"],
+      
+      /* Parser Module Mappings */
+      "@core/parser/*": ["src/core/parser/*"],
+      "@core/parser/html/*": ["src/core/parser/html/*"],
+      "@core/parser/html/processors/*": ["src/core/parser/html/processors/*"],
+      "@core/parser/html/readers/*": ["src/core/parser/html/readers/*"],
+      "@core/parser/html/tokens/*": ["src/core/parser/html/tokens/*"],
+      "@core/parser/css/*": ["src/core/parser/css/*"],
+      "@core/parser/css/readers/*": ["src/core/parser/css/readers/*"],
+      "@core/parser/css/states/*": ["src/core/parser/css/states/*"],
+      "@core/parser/css/utils/*": ["src/core/parser/css/utils/*"],
+      
+      /* AST Module Mappings */
+      "@core/ast/*": ["src/core/ast/*"],
+      "@core/ast/html/*": ["src/core/ast/html/*"],
+      "@core/ast/html/node/*": ["src/core/ast/html/node/*"],
+      "@core/ast/html/optimizers/*": ["src/core/ast/html/optimizers/*"],
+      "@core/ast/html/processors/*": ["src/core/ast/html/processors/*"],
+      "@core/ast/html/validators/*": ["src/core/ast/html/validators/*"],
+      "@core/ast/css/*": ["src/core/ast/css/*"],
+      "@core/ast/css/optimizers/*": ["src/core/ast/css/optimizers/*"],
+      
+      /* Validation Module Mappings */
+      "@core/validation/*": ["src/core/validation/*"],
+      "@core/validation/engine/*": ["src/core/validation/engine/*"],
+      "@core/validation/rules/*": ["src/core/validation/rules/*"],
+      "@core/validation/factory/*": ["src/core/validation/factory/*"],
+      "@core/validation/registry/*": ["src/core/validation/registry/*"],
+      "@core/validation/model/*": ["src/core/validation/model/*"],
+      "@core/validation/errors/*": ["src/core/validation/errors/*"],
+      
+      /* IOC Container Mappings */
+      "@core/ioc/*": ["src/core/ioc/*"],
+      "@core/ioc/containers/*": ["src/core/ioc/containers/*"],
+      "@core/ioc/providers/*": ["src/core/ioc/providers/*"],
+      "@core/ioc/registry/*": ["src/core/ioc/registry/*"],
+      
+      /* Policy Engine Mappings */
+      "@core/policy/*": ["src/core/policy/*"],
+      "@core/policy/engine/*": ["src/core/policy/engine/*"],
+      "@core/policy/decorators/*": ["src/core/policy/decorators/*"],
+      "@core/policy/environment/*": ["src/core/policy/environment/*"],
+      "@core/policy/loading/*": ["src/core/policy/loading/*"],
+      "@core/policy/reporting/*": ["src/core/policy/reporting/*"],
+      "@core/policy/branching/*": ["src/core/policy/branching/*"],
+      "@core/policy/user/*": ["src/core/policy/user/*"],
+      
+      /* Virtual DOM/HTML/CSS Mappings */
+      "@core/vhtml/*": ["src/core/vhtml/*"],
+      "@core/vdom/*": ["src/core/vdom/*"],
+      "@core/vcss/*": ["src/core/vcss/*"],
+      
+      /* Common Utilities */
+      "@core/common/*": ["src/core/common/*"],
+      "@core/common/constants/*": ["src/core/common/constants/*"],
+      "@core/common/errors/*": ["src/core/common/errors/*"],
+      "@core/common/types/*": ["src/core/common/types/*"],
+      "@core/common/utils/*": ["src/core/common/utils/*"],
+      
+      /* Configuration Mappings */
+      "@core/config/*": ["src/core/config/*"],
+      "@core/components/*": ["src/core/components/*"],
+      "@core/factory/*": ["src/core/factory/*"],
+      
+      /* Legacy Support (for migration) */
+      "@parser/*": ["src/core/parser/*"],
+      "@diff/*": ["src/core/diff/*"],
+      "@api/*": ["src/core/api/*"],
+      "@factory/*": ["src/core/factory/*"],
+      
+      /* Test-Specific Mappings for QA */
+      "@test/core/*": ["tests/qa/modules/core-*/*"],
+      "@test/fixtures/*": ["tests/fixtures/core/*"],
+      "@test/utils/*": ["tests/utils/core/*"],
+      "@test/behavioral/*": ["tests/qa/behavioral/core-*/*"]
+    },
+    
+    /* Core Module Resolution Options */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    
+    /* Core-Specific Library Support */
+    "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    "types": ["jest", "node"],
+    
+    /* Core Build Optimization */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "incremental": true,
+    "composite": true
+  },
+  
+  "include": [
+    "src/core/**/*.ts",
+    "src/core/**/*.tsx",
+    "src/core/**/*.d.ts"
+  ],
+  
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/cli/**/*",
+    "tests/**/*.ts",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ],
+  
+  /* Core-Specific Compilation Settings */
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
+}

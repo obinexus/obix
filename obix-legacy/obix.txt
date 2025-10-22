@@ -1,0 +1,1145 @@
+.
+├── absolute_imports.txt
+├── assets
+│   ├── branding
+│   │   ├── fonts
+│   │   ├── icons
+│   │   └── logos
+│   ├── design
+│   │   ├── mockups
+│   │   ├── prototypes
+│   │   └── wireframes
+│   ├── media
+│   │   ├── animations
+│   │   ├── images
+│   │   └── videos
+│   └── templates
+│       ├── components
+│       ├── documents
+│       └── pages
+├── babel.config.js
+├── babel_integration_script.sh
+├── backup
+│   ├── validation_20250428_084141
+│   │   └── src
+│   │       └── core
+│   │           └── validation
+│   │               ├── core
+│   │               │   ├── index.ts
+│   │               │   ├── IValidationEngine.ts
+│   │               │   └── ValidationEngineImpl.ts
+│   │               ├── data
+│   │               │   ├── index.ts
+│   │               │   └── ValidationDataModel.ts
+│   │               ├── engine
+│   │               │   ├── config
+│   │               │   │   ├── index.ts
+│   │               │   │   ├── ValidationEngineConfiguration.ts
+│   │               │   │   └── ValidationErrorHandlingStrategies.ts
+│   │               │   ├── core
+│   │               │   │   ├── index.ts
+│   │               │   │   ├── IValidationEngine.ts
+│   │               │   │   └── ValidationEngineImpl.ts
+│   │               │   ├── index.ts
+│   │               │   └── ValidationEngine.ts
+│   │               ├── errors
+│   │               │   ├── ErrorHandler.ts
+│   │               │   ├── ErrorTracker.ts
+│   │               │   ├── ExecutionTrace.ts
+│   │               │   ├── index.ts
+│   │               │   └── ValidationError.ts
+│   │               ├── factory
+│   │               │   ├── index.ts
+│   │               │   └── ValidationAdapterFactory.ts
+│   │               ├── index.ts
+│   │               ├── registry
+│   │               │   ├── index.ts
+│   │               │   ├── ValidationEngineRegistry.ts
+│   │               │   └── ValidationRuleRegistry.ts
+│   │               └── rules
+│   │                   ├── CSSValidationRule.ts
+│   │                   ├── HTMLValidationRule.ts
+│   │                   └── ValidationRule.ts
+│   └── validation_20250428_085137
+│       └── src
+│           └── core
+│               └── validation
+│                   ├── engine
+│                   │   ├── index.ts
+│                   │   ├── IValidationEngine.ts
+│                   │   ├── ValidationEngineConfiguration.ts
+│                   │   ├── ValidationEngineImpl.ts
+│                   │   ├── ValidationEngine.ts
+│                   │   └── ValidationErrorHandlingStrategies.ts
+│                   ├── errors
+│                   │   ├── ErrorHandler.ts
+│                   │   ├── ErrorTracker.ts
+│                   │   ├── ExecutionTrace.ts
+│                   │   ├── index.ts
+│                   │   └── ValidationError.ts
+│                   ├── factory
+│                   │   ├── index.ts
+│                   │   └── ValidationAdapterFactory.ts
+│                   ├── index.ts
+│                   ├── model
+│                   │   ├── index.ts
+│                   │   └── ValidationDataModel.ts
+│                   ├── registry
+│                   │   ├── index.ts
+│                   │   ├── ValidationEngineRegistry.ts
+│                   │   └── ValidationRuleRegistry.ts
+│                   └── rules
+│                       ├── CSSValidationRule.ts
+│                       ├── HTMLValidationRule.ts
+│                       ├── index.ts
+│                       └── ValidationRule.ts
+├── CLI_ARCHITECTURAL_REFACTORING_REPORT.md
+├── config
+│   ├── babel
+│   │   └── obix-plugins.js
+│   ├── eslint
+│   │   ├── base
+│   │   ├── development
+│   │   └── production
+│   ├── jest
+│   │   ├── integration
+│   │   ├── jest.config.js
+│   │   ├── jest.setup.js
+│   │   ├── performance
+│   │   ├── state-machine-performance-reporter.js
+│   │   └── unit
+│   ├── prettier
+│   ├── rollup
+│   │   ├── development
+│   │   ├── plugins
+│   │   ├── production
+│   │   └── rollup.config.js
+│   ├── typescript
+│   │   ├── base
+│   │   ├── development
+│   │   ├── production
+│   │   └── tsconfig.json
+│   └── webpack
+├── demos
+│   ├── DOP_ORIGINAL.md
+│   ├── DOP_ORIGINAL.pdf
+│   ├── DOP_ORIGINAL.png
+│   └── virtual-css
+│       └── vcss.ts
+├── docs
+│   ├── algorithms
+│   │   ├── diff
+│   │   ├── minimization
+│   │   ├── optimization
+│   │   └── visualizations
+│   ├── api
+│   │   ├── functional
+│   │   ├── OBIX Formal Data Oriented Requirement.pdf
+│   │   ├── oop
+│   │   └── reference
+│   │       ├── API.md
+│   │       └── PLAN.md
+│   ├── api_design.md
+│   ├── architecture
+│   │   ├── decisions
+│   │   │   ├── 0001-automaton-state-minimization.md
+│   │   │   └── OBIX Parser Module Architecture Plan.md
+│   │   ├── diagrams
+│   │   │   ├── OBIX modules.md
+│   │   │   └── OBIX modules.pdf
+│   │   ├── models
+│   │   │   ├── DOP Adapter Error Validation Module Implementation.md
+│   │   │   ├── OBIX Formal Data Oriented Requirement.md
+│   │   │   └── OBIX Formal Data Oriented Requirement.pdf
+│   │   └── patterns
+│   │       ├── EV.md
+│   │       └── OBIX DOP Adapter.md
+│   ├── artificats
+│   │   ├── AeroCache.js
+│   │   └── Error_Validation.md
+│   ├── ast
+│   │   └── Validation_System.md
+│   ├── Cryptographic_Standard_V1_0.pdf
+│   ├── data_oriented_adapter.md
+│   ├── diagrams
+│   │   ├── API.md
+│   │   └── babel
+│   │       └── OBICompilation.md
+│   ├── dop-adapter
+│   │   ├── adapter
+│   │   │   └── DOPAdapter.js
+│   │   ├── components
+│   │   │   └── ButtonLogic.js
+│   │   ├── Isomorphic_Reduction__Not_a_Bug__But_a_Feature.pdf
+│   │   ├── main.js
+│   │   ├── package.json
+│   │   ├── README.md
+│   │   ├── render
+│   │   │   ├── renderFunc.js
+│   │   │   └── renderOOP.js
+│   │   └── syntax
+│   │       ├── domain_sepcific.tsx
+│   │       └── example.tsx
+│   ├── guides
+│   │   ├── best-practices
+│   │   ├── examples
+│   │   ├── getting-started
+│   │   │   └── index.md.1
+│   │   ├── migration
+│   │   ├── testing
+│   │   │   └── OBIX Framwork.md
+│   │   └── troubleshooting
+│   ├── images
+│   │   ├── uml_diagram.png
+│   │   ├── uml_diagram.svg
+│   │   └── valdiaotn.md
+│   ├── Mathematical_Framework_for_Zero_Overhead_Data_Marshalling.pdf
+│   ├── plank.md
+│   ├── planning
+│   │   ├── diagrams
+│   │   │   ├── CORE_AUTOMATON.md
+│   │   │   ├── CSS.md
+│   │   │   ├── CSS.pdf
+│   │   │   ├── DOP Diagram for CORE_AUTOMATON.md
+│   │   │   ├── DOP Diagram for CORE_AUTOMATON.pdf
+│   │   │   └── parser
+│   │   │       └── PARSER.md
+│   │   ├── milestones
+│   │   │   └── OBIX_AST_Implementation_Plan.md
+│   │   ├── phases
+│   │   │   ├── PHASES.md
+│   │   │   ├── WEEK_1.1_StateMachineTransitionCache.md
+│   │   │   ├── Week1_2.AeroCache.md
+│   │   │   ├── Week1.3.AeroCache3.md
+│   │   │   └── WEEK_1.md
+│   │   ├── requirements
+│   │   │   ├── DOP.md
+│   │   │   ├── OBIX.md
+│   │   │   └── PLAN.md
+│   │   └── roadmap
+│   ├── PLAN_VALIDATION.md
+│   ├── poc
+│   │   └── mvp
+│   │       ├── backup
+│   │       │   ├── poliC_demo.c
+│   │       │   └── poliC_demo_v1.c
+│   │       ├── Makefile
+│   │       ├── poliC_demo
+│   │       ├── poliC_demo.c
+│   │       ├── poliC_demo_v1.c
+│   │       ├── README.md
+│   │       ├── run.sh
+│   │       └── TODO.md
+│   ├── polic
+│   │   ├── cmake
+│   │   │   └── polic-config.cmake.in
+│   │   ├── CMakeLists.txt
+│   │   ├── docs
+│   │   │   ├── api
+│   │   │   ├── guides
+│   │   │   ├── internal
+│   │   │   └── plan
+│   │   │       ├── migration-plan.md
+│   │   │       └── project-plan.md
+│   │   ├── examples
+│   │   │   ├── advanced
+│   │   │   │   └── CMakeLists.txt
+│   │   │   ├── basic
+│   │   │   │   ├── basic_example.c
+│   │   │   │   └── CMakeLists.txt
+│   │   │   └── CMakeLists.txt
+│   │   ├── include
+│   │   │   └── polic
+│   │   │       ├── config.h
+│   │   │       ├── hooks
+│   │   │       └── polic.h
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── core
+│   │   │   │   └── polic.c
+│   │   │   ├── platform
+│   │   │   └── util
+│   │   ├── tests
+│   │   │   ├── CMakeLists.txt
+│   │   │   ├── integration
+│   │   │   └── unit
+│   │   │       ├── CMakeLists.txt
+│   │   │       └── test_core.c
+│   │   └── tools
+│   │       └── scripts
+│   ├── policy
+│   │   ├── policy_System_design.md
+│   │   ├── policy_system.md
+│   │   └── problem_statement.md
+│   ├── README.md
+│   ├── research
+│   │   ├── analysis
+│   │   ├── benchmarks
+│   │   └── papers
+│   │       ├── Automaton State Minimization and AST Optimization.pdf
+│   │       ├── DOP.md
+│   │       ├── DOP.pdf
+│   │       ├── Extended Automaton-AST Minimization and Validation.pdf
+│   │       ├── State Machine Minization - An Application Based Case Study  on Tennis.pdf
+│   │       ├── State Machine Optimization in Tennis Score Tracking.md
+│   │       └── tennis_tracker.py
+│   ├── sinphase_documentation.pdf
+│   ├── specifications
+│   │   ├── algorithms
+│   │   ├── automaton
+│   │   └── interfaces
+│   │       ├── OBIX DOP Adapter Interface.md
+│   │       └── OBIX DOP Adapter Interfaces.svg
+│   └── Technicle_milestone.md
+├── env_fix.sh
+├── examples
+│   ├── advanced
+│   │   ├── dashboard
+│   │   ├── data-visualization
+│   │   └── state-management
+│   ├── basics
+│   │   ├── functional-counter.jsx
+│   │   ├── oop-counter.jsx
+│   │   └── transformed_ouput.js
+│   ├── benchmarks
+│   │   ├── memory
+│   │   ├── rendering
+│   │   └── state-transitions
+│   ├── case-studies
+│   ├── components
+│   │   ├── advanced
+│   │   └── basic
+│   ├── css_parser
+│   │   └── cssstatemachine.ts
+│   ├── demos
+│   │   ├── admin
+│   │   ├── e-commerce
+│   │   └── social
+│   ├── simple
+│   │   ├── counter
+│   │   ├── form
+│   │   └── todo
+│   └── templates
+├── inprogress
+│   ├── obix_abstract_migration (1).ts
+│   └── validation-protocol.ts
+├── jest.config.js
+├── jest.integration.config.js
+├── jest.qa.config.js
+├── jest.setup.js
+├── jest.unit.config.js
+├── LICENSE
+├── merge_conflicts_resolution.sh
+├── obix.txt
+├── old
+│   ├── dop
+│   │   ├── BaseBehaviorModel.ts
+│   │   ├── BaseDataModel.ts
+│   │   ├── BaseDOPAdapter.ts
+│   │   ├── BehaviorRegistry.ts
+│   │   ├── BehaviourChain.ts
+│   │   ├── BehaviourModel.ts
+│   │   ├── DataModelFactory.ts
+│   │   ├── DOPAdapterFactory.ts
+│   │   ├── DOPAdapter.ts
+│   │   ├── DOPValidtionIntergrator.ts
+│   │   ├── DualParadigmValidationAdapterFactory.ts
+│   │   ├── EnhacedValidationBehaviourModel.ts
+│   │   ├── EnhancedBehaviourChain.ts
+│   │   ├── ExecutionTrace.ts
+│   │   ├── ImplementationComparisonResult.ts
+│   │   ├── ImplementationMismatchError.ts
+│   │   ├── OptimizationMetrics.ts
+│   │   ├── OptimizedBehaviour.ts
+│   │   ├── OptimizedResult.ts
+│   │   ├── OptimizedValidationBehaviourModel.ts
+│   │   ├── StatefulDataModel.ts
+│   │   ├── TimedDOPAdapter.ts
+│   │   ├── TransformBehavior.ts
+│   │   ├── ValidatationDataModelImpl.ts
+│   │   ├── ValidationAdapter.ts
+│   │   ├── ValidationBehaviorModelImpl.ts
+│   │   ├── ValidationBehaviourModel.ts
+│   │   ├── ValidationDataModelImpl.ts
+│   │   ├── ValidationDOPAdapter.ts
+│   │   ├── ValidationDOPFactory.ts
+│   │   ├── ValidationResult.ts
+│   │   ├── ValidationStateMachine.ts
+│   │   └── ValidationState.ts
+│   └── dop_tests
+│       ├── BaseDOPAdapter.test.ts
+│       ├── BaseDOPAdapter.test.ts.bak
+│       ├── BehaviorModel.test.ts
+│       ├── BehaviorModel.test.ts.bak
+│       ├── DataModel.test.ts
+│       ├── DataModel.test.ts.bak
+│       ├── ImplementationComparisionResult.test.ts
+│       ├── ImplementationComparisionResult.test.ts.bak
+│       ├── TestBehaviourModel.test.ts
+│       ├── TestBehaviourModel.test.ts.bak
+│       ├── TimedDOPAdapter.test.ts
+│       ├── TimedDOPAdapter.test.ts.bak
+│       ├── ValidationDOPAdapter.test.ts
+│       └── ValidationDOPAdapter.test.ts.bak
+├── package.json
+├── package.json.backup
+├── poc
+│   ├── dop-adapter
+│   │   ├── adapter
+│   │   │   └── DOPAdapter.js
+│   │   ├── components
+│   │   │   └── ButtonLogic.js
+│   │   ├── main.js
+│   │   ├── package.json
+│   │   └── render
+│   │       ├── renderFunc.js
+│   │       └── renderOOP.js
+│   └── syntax
+│       ├── domain_sepcific.tsx
+│       └── example.tsx
+├── project
+│   ├── analytics
+│   │   ├── feedback
+│   │   ├── performance
+│   │   └── usage
+│   ├── governance
+│   │   ├── decisions
+│   │   ├── reviews
+│   │   └── standards
+│   ├── planning
+│   │   ├── milestones
+│   │   ├── roadmap
+│   │   └── sprints
+│   └── requirements
+│       ├── compatibility
+│       ├── functional
+│       └── performance
+├── README.md
+├── readmes
+│   └── policy
+│       └── README.md
+├── rollup.config.js
+├── scripts
+│   ├── analyze-modules.sh
+│   ├── ARCHITECTURAL_REFACTORING_REPORT.md
+│   ├── backup
+│   │   └── redundant_interfaces
+│   │       └── MIGRATION_MANIFEST.md
+│   ├── ci
+│   │   ├── deploy
+│   │   └── test
+│   ├── dev
+│   │   ├── generate
+│   │   └── setup
+│   │       └── directories.js
+│   ├── enhanced-import-validator.sh
+│   ├── import_compliance_resolver.sh
+│   ├── ps1
+│   ├── qa_common_helpers.sh
+│   ├── qa_master_runner.sh
+│   ├── qa-resolution-deployment.sh
+│   ├── release
+│   │   ├── notify
+│   │   ├── prepare
+│   │   └── publish
+│   ├── run-full-tests.sh
+│   ├── setup
+│   │   ├── babel-plugin-obix-compiler.js
+│   │   ├── babel-plugin-obix-component-syntax.js
+│   │   ├── babel-plugin-obix-policy.js
+│   │   ├── babel-plugin-obix-state-optimization.js
+│   │   └── babel-plugin-obix-validation.js
+│   ├── sh
+│   │   ├── activate.sh
+│   │   ├── dev-setup.sh
+│   │   ├── env-setup.sh
+│   │   └── setup-contianer.sh
+│   ├── sinphase-validator.ts
+│   ├── test
+│   │   ├── integration
+│   │   ├── performance
+│   │   └── unit
+│   │       ├── index.js
+│   │       └── state-machine-minimizer.test.js
+│   ├── tools
+│   │   ├── architectural-refactoring.sh
+│   │   ├── cli-architectural-refactor.sh
+│   │   ├── import-migration-tool.ts
+│   │   ├── obix-namespace-validator.sh
+│   │   ├── pacakge-json-validator.sh
+│   │   ├── package-json-validator.sh
+│   │   ├── policy-aware-shell-framework.sh
+│   │   └── validate-namespace-tree.sh
+│   ├── validate-cli-core-integration.sh
+│   ├── validate-cli-provider.sh
+│   └── validate-imports.sh
+├── src
+│   ├── cli
+│   │   ├── analyzer
+│   │   │   ├── commands
+│   │   │   │   ├── analyze.ts
+│   │   │   │   └── metrics.ts
+│   │   │   └── index.ts
+│   │   ├── bundler
+│   │   │   ├── commands
+│   │   │   │   ├── analyze-bundle.ts
+│   │   │   │   └── bundle.ts
+│   │   │   └── index.ts
+│   │   ├── cache
+│   │   │   ├── commands
+│   │   │   │   ├── clear.ts
+│   │   │   │   └── status.ts
+│   │   │   └── index.ts
+│   │   ├── cliProvider.ts
+│   │   ├── command
+│   │   │   └── CommandRegistry.ts
+│   │   ├── compiler
+│   │   │   ├── commands
+│   │   │   │   ├── CompileCommand.ts
+│   │   │   │   ├── compile.ts
+│   │   │   │   └── watch.ts
+│   │   │   └── index.ts
+│   │   ├── consumer
+│   │   │   ├── CLIModuleConsumer.ts
+│   │   │   └── index.ts
+│   │   ├── index.ts
+│   │   ├── main.ts
+│   │   ├── minifier
+│   │   │   ├── commands
+│   │   │   │   ├── minify.ts
+│   │   │   │   └── optimize.ts
+│   │   │   └── index.ts
+│   │   ├── obix.ts
+│   │   ├── policy
+│   │   │   ├── commands
+│   │   │   │   ├── check.ts
+│   │   │   │   ├── list-rules.ts
+│   │   │   │   └── set-environment.ts
+│   │   │   └── index.ts
+│   │   ├── profiler
+│   │   │   ├── commands
+│   │   │   │   ├── profile.ts
+│   │   │   │   └── report.ts
+│   │   │   └── index.ts
+│   │   ├── providers
+│   │   │   └── index.ts
+│   │   └── test-module
+│   │       ├── commands
+│   │       │   └── hello.ts
+│   │       └── index.ts
+│   ├── cli - Shortcut.lnk
+│   ├── core
+│   │   ├── analyzer
+│   │   │   ├── index.ts
+│   │   │   └── service.ts
+│   │   ├── api
+│   │   │   ├── apiProvider.ts
+│   │   │   ├── functional
+│   │   │   │   ├── component.ts
+│   │   │   │   ├── FunctionalComponent.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── hooks
+│   │   │   │   ├── createComponent.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── useComponent.ts
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.ts
+│   │   │   ├── shared
+│   │   │   │   ├── base
+│   │   │   │   │   ├── BaseComponent.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── components
+│   │   │   │   │   ├── ComponentFactory.ts
+│   │   │   │   │   ├── ComponentInterface.ts
+│   │   │   │   │   ├── ComponentLifeCycle.ts
+│   │   │   │   │   ├── ComponentStateManagement.ts
+│   │   │   │   │   ├── ComponentTransitionManager.ts
+│   │   │   │   │   ├── ComponentValidator.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── events
+│   │   │   │   │   ├── EventBus.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── oop
+│   │   │   │   │   ├── BaseComponent.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── render
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   └── RenderTypes.ts
+│   │   │   │   ├── state
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── StateManager.ts
+│   │   │   │   │   └── StateType.ts
+│   │   │   │   ├── transitions
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   └── TransitionManager.ts
+│   │   │   │   └── validation
+│   │   │   │       ├── index.ts
+│   │   │   │       └── ValidationComponent.ts
+│   │   │   └── utils
+│   │   │       ├── index.ts
+│   │   │       └── SateHelpers.ts
+│   │   ├── ast
+│   │   │   ├── astProvider.ts
+│   │   │   ├── css
+│   │   │   │   ├── node
+│   │   │   │   │   ├── CSSNode.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── optimizers
+│   │   │   │   │   ├── CSSAstOptimizer.ts
+│   │   │   │   │   └── CSSAst.ts
+│   │   │   │   ├── proccessors
+│   │   │   │   └── validators
+│   │   │   ├── html
+│   │   │   │   ├── node
+│   │   │   │   │   ├── BaseHTMLNode.ts
+│   │   │   │   │   ├── HTMLCData.ts
+│   │   │   │   │   ├── HTMLCommentNode.ts
+│   │   │   │   │   ├── HTMLDoctypeNode.ts
+│   │   │   │   │   ├── HTMLElementNode.ts
+│   │   │   │   │   ├── HTMLFragmentNode.ts
+│   │   │   │   │   ├── HTMLNode.ts
+│   │   │   │   │   ├── HTMLProcessingInstructionNode.ts
+│   │   │   │   │   ├── HTMLRootNode.ts
+│   │   │   │   │   ├── HTMLTextNode.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── optimizers
+│   │   │   │   │   ├── HTMLAstOptimizer.ts
+│   │   │   │   │   ├── HTMLAst.ts
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── MemoryOptimizer.ts
+│   │   │   │   │   ├── NodeMapBuilder.ts
+│   │   │   │   │   ├── NodeReductionOptimizer.ts
+│   │   │   │   │   └── s.md
+│   │   │   │   ├── processors
+│   │   │   │   │   └── HMTLAstProcessor.ts
+│   │   │   │   └── validators
+│   │   │   │       ├── AttributeValidationRule.ts
+│   │   │   │       ├── HtmlAstValidator.ts
+│   │   │   │       └── HTMLStructureRule.ts
+│   │   │   └── index.ts
+│   │   ├── automaton
+│   │   │   ├── automatonProvider.ts
+│   │   │   ├── equivalence
+│   │   │   │   ├── EquivalenceClassComputer.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.ts
+│   │   │   ├── minimizer
+│   │   │   │   ├── EquivalenceClassComputer.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── StateMachineMinimizer.ts
+│   │   │   ├── state
+│   │   │   │   ├── AdvancedTransitionCache.ts
+│   │   │   │   ├── CacheableStateMachine.ts
+│   │   │   │   ├── EnhancedCachableStateMachine.ts
+│   │   │   │   ├── EnhancedStateMachineTransitionCache.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── OptimizedStateMachine.ts
+│   │   │   │   ├── PerformanceMonitor.ts
+│   │   │   │   ├── PersistanceCacheStore.ts
+│   │   │   │   ├── StateMachineClass.ts
+│   │   │   │   └── State.ts
+│   │   │   ├── transition
+│   │   │   │   ├── index.ts
+│   │   │   │   └── StateMachineTransitionCache.ts
+│   │   │   └── validation
+│   │   │       ├── index.ts
+│   │   │       ├── StateMachineValidationRule.ts
+│   │   │       └── ValidationState.ts
+│   │   ├── bundler
+│   │   │   ├── index.ts
+│   │   │   └── service.ts
+│   │   ├── cache
+│   │   │   ├── index.ts
+│   │   │   ├── LRUCache.ts
+│   │   │   ├── MRUCache.ts
+│   │   │   └── service.ts
+│   │   ├── common
+│   │   │   ├── commonProvider.ts
+│   │   │   ├── constants
+│   │   │   │   ├── cache-constants.ts
+│   │   │   │   ├── event-constants.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── minimization-constants.ts
+│   │   │   │   └── state-constants.ts
+│   │   │   ├── errors
+│   │   │   │   ├── error-types.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── index.ts
+│   │   │   ├── types
+│   │   │   │   ├── cache-types.d.ts
+│   │   │   │   ├── event-types.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── minimization-types.d.ts
+│   │   │   │   └── state-machine-types.d.ts
+│   │   │   └── utils
+│   │   │       ├── AsyncUtils.ts
+│   │   │       ├── DataUtils.ts
+│   │   │       ├── index.ts
+│   │   │       └── StringUtils.ts
+│   │   ├── compiler
+│   │   │   ├── index.ts
+│   │   │   └── service.ts
+│   │   ├── components
+│   │   │   └── ObixComponent.ts
+│   │   ├── config
+│   │   │   └── component.ts
+│   │   ├── diff
+│   │   │   ├── algorithm
+│   │   │   ├── dom
+│   │   │   ├── patch
+│   │   │   ├── reconciliation
+│   │   │   └── vnode
+│   │   ├── dop
+│   │   │   ├── adapter
+│   │   │   │   ├── DOPAdapter.ts
+│   │   │   │   ├── DOPValidtionIntergrator.ts
+│   │   │   │   ├── DuaParadigmFactory.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── TimedDOPAdapter.ts
+│   │   │   │   └── ValidationDOPAdapter.ts
+│   │   │   ├── behavior
+│   │   │   │   ├── BehaviorModel.ts
+│   │   │   │   ├── BehaviorRegistry.ts
+│   │   │   │   ├── BehaviourChain.ts
+│   │   │   │   ├── BehaviourModel.ts
+│   │   │   │   ├── EnhacedValidationBehaviourModel.ts
+│   │   │   │   ├── EnhancedBehaviourChain.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── OptimizedBehaviour.ts
+│   │   │   │   ├── OptimizedValidationBehaviourModel.ts
+│   │   │   │   ├── TransformBehavior.ts
+│   │   │   │   ├── ValidationBehaviorModelImpl.ts
+│   │   │   │   └── ValidationBehaviourModel.ts
+│   │   │   ├── common
+│   │   │   │   ├── ExecutionTrace.ts
+│   │   │   │   ├── ImplementationComparisonResult.ts
+│   │   │   │   ├── ImplementationMismatchError.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── TraceComparisonResult.ts
+│   │   │   ├── data
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── StatefulDataModel.ts
+│   │   │   │   ├── StateType.ts
+│   │   │   │   ├── ValidatationDataModelImpl.ts
+│   │   │   │   └── ValidationDataModelImpl.ts
+│   │   │   ├── dopProvider.ts
+│   │   │   ├── errors
+│   │   │   │   └── ErrorSeverity.ts
+│   │   │   ├── factory
+│   │   │   │   ├── DataModelFactory.ts
+│   │   │   │   ├── DOPAdapterFactory.ts
+│   │   │   │   ├── DualParadigmValidationAdapterFactory.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── ValidationDOPFactory.ts
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.ts
+│   │   │   ├── optimization
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── OptimizationMetrics.ts
+│   │   │   │   └── OptimizedResult.ts
+│   │   │   ├── README.md
+│   │   │   └── validation
+│   │   │       ├── index.ts
+│   │   │       ├── ValidationAdapter.ts
+│   │   │       ├── ValidationErrorHandlingStrategies.ts
+│   │   │       ├── ValidationResult.ts
+│   │   │       ├── ValidationStateMachine.ts
+│   │   │       └── ValidationState.ts
+│   │   ├── factory
+│   │   │   ├── functional
+│   │   │   │   └── createHTMLValidator.ts
+│   │   │   └── oop
+│   │   │       └── createHTMLValidator.ts
+│   │   ├── ioc
+│   │   │   ├── containers
+│   │   │   │   ├── index.ts
+│   │   │   │   └── ServiceContainer.ts
+│   │   │   ├── contracts
+│   │   │   │   └── CoreToCliIoCContract.ts
+│   │   │   ├── index.ts
+│   │   │   ├── iocProvider.ts
+│   │   │   ├── providers
+│   │   │   │   ├── AstProvider.ts
+│   │   │   │   ├── AutomatonProvider.ts
+│   │   │   │   ├── DiffProvider.ts
+│   │   │   │   ├── DOPProvider.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── index.ts.bak
+│   │   │   │   ├── ParserProvider.ts
+│   │   │   │   ├── PolicyProvider.ts
+│   │   │   │   ├── ServiceRegistry.ts
+│   │   │   │   ├── UtilityProvider.ts
+│   │   │   │   └── ValidationProvider.ts
+│   │   │   └── registry
+│   │   │       ├── index.ts
+│   │   │       └── ServiceRegistry.ts
+│   │   ├── minifier
+│   │   │   ├── index.ts
+│   │   │   └── service.ts
+│   │   ├── parser
+│   │   │   ├── css
+│   │   │   │   ├── errors
+│   │   │   │   │   └── CSSParserError.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── readers
+│   │   │   │   │   ├── AtRuleReader.ts
+│   │   │   │   │   ├── BlockReader.ts
+│   │   │   │   │   ├── CSSFileReader.ts
+│   │   │   │   │   ├── CSSReader.ts
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── PropertyReader.ts
+│   │   │   │   │   ├── ReaderFactory.ts
+│   │   │   │   │   ├── SelectorReader.ts
+│   │   │   │   │   └── ValueReader.ts
+│   │   │   │   ├── states
+│   │   │   │   │   ├── CSSParser.ts
+│   │   │   │   │   ├── CSSStateMachine.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── tokenizer
+│   │   │   │   │   ├── CSSTokenBuilder.ts
+│   │   │   │   │   ├── CSSTokenizer.ts
+│   │   │   │   │   └── CSSTokenType.ts
+│   │   │   │   └── utils
+│   │   │   │       ├── CSSSignatureGenerator.ts
+│   │   │   │       ├── CSSStateUtils.ts
+│   │   │   │       └── index.ts
+│   │   │   ├── html
+│   │   │   │   ├── index.d.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── processors
+│   │   │   │   │   ├── AttributeProcessor.ts
+│   │   │   │   │   ├── CDataProcessor.ts
+│   │   │   │   │   ├── CommandProcessor.ts
+│   │   │   │   │   ├── DoctypeProccessor.ts
+│   │   │   │   │   ├── HTMLProcessor.ts
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── ProcessorFactory.ts
+│   │   │   │   │   ├── TagProcessor.ts
+│   │   │   │   │   ├── TextProcessor.ts
+│   │   │   │   │   └── TokenizerProcessor.ts
+│   │   │   │   ├── readers
+│   │   │   │   │   ├── AttributeReader.ts
+│   │   │   │   │   ├── CommentReader.ts
+│   │   │   │   │   ├── ContentReader.ts
+│   │   │   │   │   ├── HTMLReader.ts
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   └── TagReader.ts
+│   │   │   │   ├── tokens
+│   │   │   │   │   ├── CDataToken.ts
+│   │   │   │   │   ├── CommentToken.ts
+│   │   │   │   │   ├── HTMLTokenBuilder.ts
+│   │   │   │   │   ├── HTMLTokenizer.ts
+│   │   │   │   │   ├── HTMLToken.ts
+│   │   │   │   │   ├── HTMLTokenType.ts
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   └── TextToken.ts
+│   │   │   │   └── types.ts
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.ts
+│   │   │   └── parserProvider.ts
+│   │   ├── patch
+│   │   ├── policy
+│   │   │   ├── branching
+│   │   │   │   ├── index.ts
+│   │   │   │   └── PolicyBranching.ts
+│   │   │   ├── decorators
+│   │   │   │   ├── FunctionWrapper.ts
+│   │   │   │   ├── generated
+│   │   │   │   │   ├── enforce_banking_policy.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── OOWrapper.ts
+│   │   │   │   └── PolicyDecorator.ts
+│   │   │   ├── engine
+│   │   │   │   ├── FunctionWrapper.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── PolicyDecorator.ts
+│   │   │   │   ├── PolicyRuleEngine.ts
+│   │   │   │   └── ValidationRule.ts
+│   │   │   ├── environment
+│   │   │   │   ├── EnvironmentCache.ts
+│   │   │   │   ├── EnvironmentManager.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── index.ts
+│   │   │   ├── loading
+│   │   │   │   ├── DynamicPolicyLoader.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── PolicyDecorator.ts
+│   │   │   ├── policyProvider.ts
+│   │   │   ├── reporting
+│   │   │   │   ├── index.ts
+│   │   │   │   └── PolicyViolationReporter.ts
+│   │   │   ├── service.ts
+│   │   │   ├── types
+│   │   │   │   ├── EnvironmentType.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── PolicyTypes.ts
+│   │   │   └── user
+│   │   │       ├── index.ts
+│   │   │       └── UserDefinedPolicies.ts
+│   │   ├── profiler
+│   │   │   ├── index.ts
+│   │   │   └── service.ts
+│   │   ├── utils
+│   │   │   └── index.ts
+│   │   ├── validation
+│   │   │   ├── engine
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── IValidationEngine.ts
+│   │   │   │   ├── ValidationEngineConfiguration.ts
+│   │   │   │   ├── ValidationEngineImpl.ts
+│   │   │   │   ├── ValidationEngine.ts
+│   │   │   │   └── ValidationErrorHandlingStrategies.ts
+│   │   │   ├── errors
+│   │   │   │   ├── ErrorHandler.ts
+│   │   │   │   ├── ErrorTracker.ts
+│   │   │   │   ├── ExecutionTraceDetail.ts
+│   │   │   │   ├── ExecutionTrace.ts
+│   │   │   │   ├── ImplementationMismatchError.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── ParserError.ts
+│   │   │   │   ├── ValidationErrorFactory.ts
+│   │   │   │   ├── ValidationError.ts
+│   │   │   │   └── ValidationSystemError.ts
+│   │   │   ├── factory
+│   │   │   │   ├── index.ts
+│   │   │   │   └── ValidationAdapterFactory.ts
+│   │   │   ├── index.ts
+│   │   │   ├── model
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── StateType.ts
+│   │   │   │   └── ValidationDataModel.ts
+│   │   │   ├── registry
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── ValidationEngineRegistry.ts
+│   │   │   │   └── ValidationRuleRegistry.ts
+│   │   │   ├── rules
+│   │   │   │   ├── CSSValidationRule.ts
+│   │   │   │   ├── HTMLValidationRule.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── ValidationRule.ts
+│   │   │   └── validationProvider.ts
+│   │   ├── vcss
+│   │   │   ├── CSSDiff.ts
+│   │   │   ├── CSSPatch.ts
+│   │   │   ├── CSSVirtualStylesheet.ts
+│   │   │   ├── index.ts
+│   │   │   └── VCSSNode.ts
+│   │   ├── vdom
+│   │   │   └── VirtualDOM.ts
+│   │   └── vhtml
+│   │       ├── VHTMLComponent.ts
+│   │       ├── VHTMLConverters.ts
+│   │       ├── VHTMLDiff.ts
+│   │       ├── VHTMLNodeImpl.ts
+│   │       ├── VHTMLNode.ts
+│   │       ├── VHTMLPatch.ts
+│   │       └── VHTMLPatchTypes.ts
+│   ├── index.ts
+│   └── qa
+│       └── MatrixQAValidation.ts
+├── tests
+│   ├── fixtures
+│   │   ├── components
+│   │   ├── dom
+│   │   ├── html
+│   │   ├── large-data
+│   │   └── state-machines
+│   ├── integration
+│   │   ├── api-implementation
+│   │   ├── CSSParserSuite.test.ts
+│   │   ├── end-to-end
+│   │   ├── parser-optimizer
+│   │   ├── policy-system
+│   │   │   ├── dop-adapter
+│   │   │   │   └── DOPAdapterPolicy.test.ts
+│   │   │   ├── DOPAdapterPolicy.test.ts
+│   │   │   ├── functional
+│   │   │   │   └── FunctionalComponentPolicy.test.ts
+│   │   │   ├── oop
+│   │   │   │   └── OOPComponentPolicy.test.ts
+│   │   │   └── validation
+│   │   │       └── ValidationPolicy.test.ts
+│   │   ├── state-diff
+│   │   └── validation-dop-adapter
+│   │       └── integration.test.ts
+│   ├── jest.unit.config.js
+│   ├── OBIXTestSequencer.js
+│   ├── OBIXTestSequencer.js.bak
+│   ├── qa
+│   │   ├── modules
+│   │   │   └── cli-provider
+│   │   │       └── cli-provider-validation.test.ts
+│   │   └── setup.js
+│   ├── quality_assurance
+│   │   ├── qa-policy.config.ts
+│   │   └── qa_testing_framework.ts
+│   ├── README.md
+│   ├── results
+│   │   ├── integration
+│   │   ├── junit
+│   │   │   └── junit.xml
+│   │   ├── performance
+│   │   └── unit
+│   │       └── unit-results.xml
+│   ├── setup.js
+│   ├── setup.js.bak
+│   ├── snapshots
+│   │   ├── component
+│   │   └── state
+│   ├── unit
+│   │   ├── cli
+│   │   │   └── policy
+│   │   │       └── policy-command.test.ts
+│   │   ├── components
+│   │   │   └── bank-card.test.ts
+│   │   ├── core
+│   │   │   ├── api
+│   │   │   ├── ast
+│   │   │   │   └── html
+│   │   │   │       └── validators
+│   │   │   │           └── HTMLAstValidator.test.ts
+│   │   │   ├── automaton
+│   │   │   │   └── minimizer
+│   │   │   │       └── StateMachineMinimizer.test.ts
+│   │   │   ├── dop
+│   │   │   │   ├── adapter
+│   │   │   │   │   ├── BaseDOPAdapter.test.ts
+│   │   │   │   │   ├── BaseDOPAdapter.test.ts.bak
+│   │   │   │   │   ├── DOPAdapter.test.ts
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── TimedDOPAdapter.test.ts
+│   │   │   │   │   ├── TimedDOPAdapter.test.ts.bak
+│   │   │   │   │   ├── ValidationDOPAdapter.test.ts
+│   │   │   │   │   └── ValidationDOPAdapter.test.ts.bak
+│   │   │   │   ├── behavior
+│   │   │   │   │   ├── BehaviorModel.test.ts
+│   │   │   │   │   ├── BehaviorModel.test.ts.bak
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── TestBehaviourModel.test.ts
+│   │   │   │   │   └── TestBehaviourModel.test.ts.bak
+│   │   │   │   ├── common
+│   │   │   │   │   ├── ImplementationComparisionResult.test.ts
+│   │   │   │   │   ├── ImplementationComparisionResult.test.ts.bak
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── data
+│   │   │   │   │   ├── DataModel.test.ts
+│   │   │   │   │   ├── DataModel.test.ts.bak
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── DOPAdapter.test.ts
+│   │   │   │   ├── factory
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── index.js
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── optimization
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── PolicyAwareDOPAdapter.test.ts
+│   │   │   │   └── validation
+│   │   │   │       └── index.ts
+│   │   │   ├── ioc
+│   │   │   │   └── providers
+│   │   │   │       └── policy
+│   │   │   │           └── PolicyProvider.test.ts
+│   │   │   ├── parser
+│   │   │   │   ├── css
+│   │   │   │   │   ├── errors
+│   │   │   │   │   ├── parser
+│   │   │   │   │   │   ├── CSSParser.test.ts
+│   │   │   │   │   │   └── CSSTokenizer.test.ts
+│   │   │   │   │   ├── readers
+│   │   │   │   │   │   └── CSSReader.test.ts
+│   │   │   │   │   ├── states
+│   │   │   │   │   │   ├── CSSStateMachine.test.ts
+│   │   │   │   │   │   └── CSSState.test.ts
+│   │   │   │   │   └── tokenizer
+│   │   │   │   │       └── CSSTokenizer.test.ts
+│   │   │   │   ├── html
+│   │   │   │   │   └── HTMLParser.test.ts
+│   │   │   │   └── minimzer
+│   │   │   │       └── AutomaonAst.test.ts
+│   │   │   ├── policy
+│   │   │   │   ├── branching
+│   │   │   │   │   └── PolicyBranching.test.ts
+│   │   │   │   ├── decorators
+│   │   │   │   │   ├── FunctionWrapper.test.ts
+│   │   │   │   │   └── PolicyDecorator.test.ts
+│   │   │   │   ├── engine
+│   │   │   │   │   ├── PolicyRuleEngine.test.ts
+│   │   │   │   │   └── ValidationRule.test.ts
+│   │   │   │   ├── environment
+│   │   │   │   │   ├── EnvironmentCache.test.ts
+│   │   │   │   │   └── EnvironmentManager.test.ts
+│   │   │   │   ├── integration
+│   │   │   │   │   ├── DOPAdapterPolicy.test.ts
+│   │   │   │   │   ├── functional
+│   │   │   │   │   │   └── FunctionalComponentPolicy.test.ts
+│   │   │   │   │   └── oop
+│   │   │   │   │       └── OOPComponentPolicy.test.ts
+│   │   │   │   ├── loading
+│   │   │   │   │   └── DynamicPolicyLoader.test.ts
+│   │   │   │   ├── reporting
+│   │   │   │   │   └── PolicyViolationReporter.test.ts
+│   │   │   │   ├── types
+│   │   │   │   │   ├── EnvironmentType.test.ts
+│   │   │   │   │   └── PolicyTypes.test.ts
+│   │   │   │   └── user
+│   │   │   │       └── UserDefinedPolicies.test.ts
+│   │   │   └── validation
+│   │   │       └── errors
+│   │   │           └── ValidationErrorSystem.test.ts
+│   │   ├── index.js
+│   │   ├── setup.js
+│   │   └── tsconfig.json
+│   └── utils
+│       ├── automaton
+│       │   └── index.js
+│       ├── dop
+│       │   ├── index.js
+│       │   ├── mockBehaviourModel.js
+│       │   ├──  mockDataModel.js
+│       │   ├── mockDOPAdapter.js
+│       │   ├── mockFactory.js
+│       │   └── validationFixtures.js
+│       ├── index.js
+│       ├── sequencers
+│       │   ├── OBIXTestSequencer.cjs
+│       │   └── OBIXTestSequencer.ts
+│       ├── testHelpers.js
+│       ├── unitTestSequencer.cjs
+│       ├── unitTestSequencer.js
+│       └── validation
+│           └── index.js
+├── TOOL_PLACEMENT_GUIDE.md
+├── tools
+│   ├── analysis
+│   │   ├── performance
+│   │   ├── runtime
+│   │   └── static
+│   ├── dev
+│   │   ├── formatters
+│   │   ├── generators
+│   │   └── linters
+│   ├── refactor
+│   │   ├── convert-to-esm.js
+│   │   ├── run-all.js
+│   │   ├── update-babel-config.js
+│   │   └── update-package-json.js
+│   └── testing
+│       ├── harnesses
+│       ├── mocks
+│       └── runners
+├── tsconfig.cjs.json
+├── tsconfig.cli.json
+├── tsconfig.core.json
+├── tsconfig.core.tsbuildinfo
+├── tsconfig.esm.json
+├── tsconfig.json
+├── tsconfig.qa.json
+├── tsconfig.test.integration.json
+├── tsconfig.test.json
+├── tsconfig.types.json
+└── tsconfig.umd.json
+
+427 directories, 716 files
